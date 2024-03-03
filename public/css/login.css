@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background-color: rgb(190, 192, 253);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(67, 70, 164);
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.box-signup {
+    padding: 25px 10px;
+    margin: auto;
+    margin-top: 50px;
+    width: 35%;
+    background-color: rgb(67, 70, 164);
+    border-radius: 30px;
+}
+
+.box-signup h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.box-signup .box {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.box-signup .box1 {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.box-signup .box1 p {
+    font-size: 20px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.box-signup .box2 {
+    padding: 0 5px;
+}
+
+.box-signup .box2 input {
+    padding: 5px 10px;
+    width: 100%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.box-signup button {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.box-signup button:hover {
+    background-color: rgb(28, 30, 99);
+    color: rgb(255, 255, 255);
+}
+
+.box-signup button:active {
+    background-color: rgb(255, 248, 211);
+    color: rgb(0, 0, 0);
+}
+
+.alert {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: rgb(255, 210, 210);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.alert a {
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+    font-weight: bold;
+}
+
+.alert a:hover {
+    cursor: pointer;
+}

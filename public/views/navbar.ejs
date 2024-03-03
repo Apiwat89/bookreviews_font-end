@@ -1,0 +1,26 @@
+<div class="head-left">
+    <img src="../pictures/product/logo.png" alt="">
+    <button class="btnHome"> Home </button>
+    <div class="dropdown">
+        <button class="btnBooks"> Books </button>
+        <div class="dropdown-content">
+            <a href="#">นิตยสาร</a>
+            <a href="#">จิตวิทยา</a>
+            <a href="#">การ์ตูน</a>
+        </div>
+    </div>
+    <button class="btnReviews"> Reviews </button>
+    <% if (role == 'admin') { %>
+        <button class="btnManagement"> Management </button>
+    <% } %>
+</div>
+
+<div class="head-right">
+    <% if (user == null) { %>
+        <a href="/signup"><button class="btnSignUp"> SignUp </button></a>
+        <a href="/login"><button class="btnLogin"> Login </button></a>
+    <% } else { %>
+        <a href="#"><button class="btnSignUp"> <%= user %> </button></a>
+        <a href="/logout"><button class="btnLogin"> Logout </button></a>
+    <% } %>
+</div>

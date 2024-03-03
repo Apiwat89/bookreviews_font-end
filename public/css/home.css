@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+body {
+    background-color: rgb(190, 192, 253);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(67, 70, 164);
+    display: flex;
+}
+
+.head-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.head-left img {
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.head-left .btnHome,
+.head-left .btnBooks,
+.head-left .btnReviews,
+.head-left .btnManagement {
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+    margin-left: 30px;
+}
+
+.head-left button:hover {
+    color: rgb(255, 248, 211);
+}
+
+.head-left .btnHome {
+    background-color: rgb(28, 30, 99);
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: -8px;
+    margin-left: -8px;
+    color: rgb(255, 248, 211);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+} 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(67, 70, 164);
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dropdown-content a:first-child {
+    margin-top: 28px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(28, 30, 99);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.head-right {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head-right .btnSignUp,
+.head-right .btnLogin {
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+    margin-left: 30px;
+}
+
+.head-right button:hover {
+    color: rgb(255, 248, 211);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+section a {
+    flex: 1 0 20%; 
+    max-width: 20%; 
+    text-decoration: none;
+}
+.box-book {
+    background-color: rgb(28, 30, 99);
+    border: 1px solid rgba(97, 99, 174, 0.384);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-book .boximg img {
+    width: 80%;
+    height: 220px;
+}
+
+.box-book .title {
+    color: #ffffff;
+    margin-top: 10px;
+    word-wrap: break-word; 
+}
+
+.box-book .title h3 {    
+    color: rgb(255, 248, 211);
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 5px 5px;
+}
+
+@media (max-width: 767px) {
+    .head-left {
+        height: -5%;
+        width: 20%;
+    }
+
+    .head-right {
+        height: 30%;
+        width: 70%;
+    }
+    
+    section a {
+        max-width: 80%; 
+    }
+}
